@@ -28,6 +28,7 @@ function TodoTemplate() {
     const onDelete = (id) => {
         setTodos(todos.filter((todo) => todo.id !== id));
     }
+    
     console.log(todos);
     return (
         <Container>

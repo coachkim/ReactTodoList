@@ -43,4 +43,18 @@ const DelteBtn = styled.button`
     background: linear-gradient(to right, #e55d87, #5fc3e4);
     box-shadow: 0 2px 25px rgba(229, 93, 135, 0.5);
 `
-export { Container, Form, TextInput, InputBtn, ListBox, DelteBtn }
+const EditBtn = styled.button`
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 400;
+    background: linear-gradient(to right, #e55d87, #5fc3e4);
+    box-shadow: 0 2px 25px rgba(229, 93, 135, 0.5);
+    margin-right: 10px;
+    margin-left: 10px;
+`
+export { Container, Form, TextInput, InputBtn, ListBox, DelteBtn, EditBtn }

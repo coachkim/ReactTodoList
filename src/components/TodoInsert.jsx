@@ -22,7 +22,7 @@ function TodoInsert({onSubmit}) {
     
   return (
     <Container>
-        <Form>
+        <Form onSubmit={handleSubmit}>
         <TextInput
             ref={ref}
             type={"text"}
