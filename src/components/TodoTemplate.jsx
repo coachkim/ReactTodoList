@@ -6,8 +6,8 @@ import TodoItemList from './TodoItemList'
 function TodoTemplate() {
     const [todos, setTodos] = useState([
         {
-          id : 1,
-          text : '리액트 기초 알아보기',
+          id : 1, // id : Number
+          text : '리액트 기초 알아보기', // text : String
         },
         {
           id : 2,
@@ -19,8 +19,8 @@ function TodoTemplate() {
 
     const handleSubmit = (text) => {
         const todo = {
-            id: nextId.current,
-            text,
+            id: nextId.current, // : Number
+            text, // : String
         };
         setTodos(todos.concat(todo));
         nextId.current += 1;
