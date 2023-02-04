@@ -17,7 +17,9 @@ function TodoInsert({onSubmit}) {
     };
 
     useEffect(() => {
-        ref.current.focus();
+        if (ref.current) {
+            ref.current.focus();
+        }
     }, []);
     
   return (
@@ -32,7 +34,7 @@ function TodoInsert({onSubmit}) {
         />
         <InputBtn
             type="submit" 
-            onClick={handleSubmit}
+            // onClick={handleSubmit}
         >
         작성
         </InputBtn>

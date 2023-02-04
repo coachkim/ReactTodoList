@@ -15,7 +15,7 @@ function TodoItem({ todo, todos, onDelete, setTodo }) {
   const onClickSubmitBtn = () => {
     const editedTodoList = todos.map((item) => ({
       ...item, 
-        text: item.id === id ? newText : text
+        text: item.id === id ? newText : item.text
     }));
     setTodo(editedTodoList);
     setEdited(false);
